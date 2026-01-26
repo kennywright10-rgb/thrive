@@ -126,11 +126,19 @@
     overflow: hidden;
 }
 
+.service-visual .service-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .service-visual::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(201,162,39,0.2) 0%, rgba(201,162,39,0.05) 100%);
+    background: linear-gradient(135deg, rgba(201,162,39,0.1) 0%, transparent 50%);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .hocatt-visual {
@@ -788,10 +796,11 @@
     overflow: hidden;
 }
 
-.team-image-placeholder {
+.team-image .team-img {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(201,162,39,0.2) 0%, var(--color-dark-gray) 100%);
+    object-fit: cover;
+    object-position: center top;
 }
 
 .team-info {
