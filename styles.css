@@ -191,6 +191,15 @@ p {
     font-size: 1rem;
 }
 
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.footer-logo .logo-img {
+    height: 40px;
+}
+
 /* Navigation */
 .main-nav {
     position: fixed;
@@ -603,6 +612,16 @@ section {
 .service-image {
     position: relative;
     min-height: 400px;
+    overflow: hidden;
+    border-radius: var(--radius-xl) 0 0 var(--radius-xl);
+}
+
+.service-image .service-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
 }
 
 .service-image-placeholder {
@@ -833,6 +852,7 @@ section {
     position: absolute;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-lg);
+    overflow: hidden;
 }
 
 .trust-image.img-1 {
@@ -840,7 +860,6 @@ section {
     height: 70%;
     top: 0;
     right: 0;
-    background: linear-gradient(135deg, rgba(201,162,39,0.2) 0%, var(--color-mid-gray) 100%);
 }
 
 .trust-image.img-2 {
@@ -848,7 +867,6 @@ section {
     height: 50%;
     bottom: 10%;
     left: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, var(--color-mid-gray) 100%);
 }
 
 .trust-image.img-3 {
@@ -856,8 +874,13 @@ section {
     height: 35%;
     top: 20%;
     left: 20%;
-    background: linear-gradient(135deg, rgba(201,162,39,0.15) 0%, var(--color-dark-gray) 100%);
     border: 1px solid rgba(255,255,255,0.1);
+}
+
+.trust-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .trust-stat-card {
